@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowerZone Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" width="70px" />
+      <h1 class="logo">Power<span>Zone</span></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#pricing">Membership</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Transform Your <span>Body</span> & Mind</h2>
+      <p>Train with the best and achieve your fitness goals today.</p>
+      <button id="getStartedBtn" class="join-btn">Join Now</button>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section id="trainers" class="trainers-section">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainers-container">
+      <div class="trainer-card">
+        <img src="https://img.freepik.com/premium-photo/body-builder-lifting-weights-gym-performing-biceps-exercises_754108-1080.jpg" alt="Trainer 1">
+        <div class="trainer-info">
+          <h3>Alex Johnson</h3>
+          <p>Strength Coach</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://thumbs.dreamstime.com/b/young-woman-doing-yoga-portrait-71951029.jpg" alt="Trainer 2">
+        <div class="trainer-info">
+          <h3>Maria Lopez</h3>
+          <p>Yoga Instructor</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://img.freepik.com/premium-photo/fitness-instructor-posing_742252-16688.jpg" alt="Trainer 3">
+        <div class="trainer-info">
+          <h3>David Smith</h3>
+          <p>Cardio Expert</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="programs-section">
+    <h2>Fitness Programs</h2>
+    <div class="programs-container">
+      <div class="program-card">
+        <h3>Weight Training</h3>
+        <p>Build strength and improve endurance through guided workouts.</p>
+      </div>
+      <div class="program-card">
+        <h3>Yoga & Flexibility</h3>
+        <p>Find your inner balance with our relaxing yoga sessions.</p>
+      </div>
+      <div class="program-card">
+        <h3>HIIT Sessions</h3>
+        <p>Burn calories fast with high-intensity interval training.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP -->
+  <section id="pricing" class="pricing-section">
+    <h2>Membership Plans</h2>
+    <div class="pricing-container">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <p class="price">₱999 / month</p>
+        <ul>
+          <li>Access to gym</li>
+          <li>1 free class</li>
+          <li>Locker use</li>
+        </ul>
+        <button class="join-btn choose-btn">Choose</button>
+      </div>
+      <div class="price-card popular">
+        <h3>Standard</h3>
+        <p class="price">₱1499 / month</p>
+        <ul>
+          <li>All Basic features</li>
+          <li>3 free classes</li>
+          <li>Trainer support</li>
+        </ul>
+        <button class="join-btn choose-btn">Choose</button>
+      </div>
+      <div class="price-card">
+        <h3>Premium</h3>
+        <p class="price">₱1999 / month</p>
+        <ul>
+          <li>All Standard features</li>
+          <li>Unlimited classes</li>
+          <li>Personal trainer</li>
+        </ul>
+        <button class="join-btn choose-btn">Choose</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="schedule-section">
+    <h2>Class Schedule</h2>
+    <table class="schedule-table">
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Program</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>7:00 AM - 8:00 AM</td>
+        <td>Yoga</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>6:00 PM - 7:00 PM</td>
+        <td>HIIT Training</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>5:00 PM - 6:00 PM</td>
+        <td>Weight Training</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 PowerZone Gym | Stay Fit. Stay Strong.</p>
+  </footer>
+
+  <!-- Registration Modal -->
+  <div id="registration-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Membership Registration</h2>
+      <form id="registration-form">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="plan">Selected Plan</label>
+        <input type="text" id="plan" name="plan" readonly>
+
+        <div class="terms">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">
+            I agree to the 
+            <a href="#" target="_blank">Terms of Service</a> and 
+            <a href="#" target="_blank">Privacy Policy</a>.
+          </label>
+        </div>
+
+        <button type="submit" class="join-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('registration-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const planInput = document.getElementById('plan');
+    const chooseButtons = document.querySelectorAll('.choose-btn');
+    const getStartedBtn = document.getElementById('getStartedBtn');
+
+    // Scroll to Membership section
+    getStartedBtn.addEventListener('click', () => {
+      document.querySelector('#pricing').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Open modal when clicking Choose buttons
+    chooseButtons.forEach(btn => {
+      btn.addEventListener('click', e => {
+        const planName = e.target.closest('.price-card').querySelector('h3').textContent;
+        planInput.value = planName;
+        modal.style.display = 'flex';
+      });
+    });
+
+    // Close modal
+    closeBtn.onclick = () => modal.style.display = 'none';
+    window.onclick = e => { if (e.target == modal) modal.style.display = 'none'; };
+
+    // Form validation
+    document.getElementById('registration-form').addEventListener('submit', function(e) {
+      const terms = document.getElementById('terms');
+      if (!terms.checked) {
+        e.preventDefault();
+        alert('Please agree to the Terms of Service and Privacy Policy before submitting.');
+      } else {
+        e.preventDefault();
+        alert('Registration submitted successfully!');
+        modal.style.display = 'none';
+        this.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
